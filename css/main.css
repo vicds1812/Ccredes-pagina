@@ -360,16 +360,18 @@ ul{
 @media only screen and (min-width:992px){
   .contenedor{
     width: 90%;
-    max-width: 1100px;
+    max-width: 1100px; 
     
   }
 }
 /** Barra**/
 div.barra{
   background-color: #353535;
-  padding: 20px 0;    
+  padding: 3px 0;    
   position: fixed;
+  z-index: 100;
   top: 0;
+  min-width: 100%;
 }
 
 /**Header**/
@@ -458,7 +460,8 @@ div.logo{
   float: left;
 }
 div.logo img{
-  width: 100%;
+  width: 20%;
+  padding-top: 8px;
 }
 @media only screen and (min-width: 768px){
   div.logo{
@@ -474,7 +477,8 @@ nav.navegacion-principal {
 nav.navegacion-principal a{
   font-family: 'Oswald', sans-serif;
   color: #ffffff;
-  font-size: 1.4em;
+  font-size: .9em;
+  font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   transition: all .4s ease;
@@ -702,9 +706,9 @@ ul.resumen-evento li{
 }
 p.numero{
   color: #fe4918;
-  font-size: 4em;
+  font-size: 3em;
   display: block;
-  margin: 0 0 10px 0;
+  margin: 0 0 5px 0;
   font-family: 'Oswald', sans-serif;
 }
 /**Tabla de Precios**/
