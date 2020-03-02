@@ -858,6 +858,9 @@ div.newsletter .contenido h3{
   font-family: 'PT sans',sans-serif;
 
 }
+.Icon-call{
+  width: 30%;
+}
 /**Cuenta regresiva**/
 div.cuenta-regresiva ul li{
   text-transform: uppercase;
