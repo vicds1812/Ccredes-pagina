@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -13,8 +13,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet"> 
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">  -->
     
   <meta name="theme-color" content="#fafafa">
 <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=scevTsEw4VyAc1NRCCmergy1ONzyuV8f7ZJ_B7PtrmdqaXGYI6YJMimxTxF-ZcXWZnPMpehuTSUdtcxYweou-Q" charset="UTF-8"></script></head>
@@ -46,23 +46,26 @@
         <span></span>
       </div>
       <nav class="navegacion-principal">
-        <a href="#">Nosotros</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
-        <a href="#">Aviso de privacidad</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#cliente">Clientes</a>
+        <a href="#contacta">Contacto</a>
+        <a href="./documents/AVISO DE PRIVACIDAD.pdf" target="_blank">Aviso de privacidad</a>
       </nav>
     </div>
   </div><!--Barra-->
 
       <section class="seccion contenedor">
+      
         <h2>Creando Redes de contacto</h2>
         <p>Somos un call center con un respaldado de 10 años de experiencia, atendiendo las necesidades de nuestros clientes dedicándonos a la recuperación de cartera, con la misión de tener una red de ayuda y confianza a nuestros clientes, buscando tener las mejores alternativas de solución y aplicar las mejores estrategias de cobranza. Nos caracterizamos por brindar asesoría integral, profesional, personalizada y confidencial.</p>
       </section><!--Seccion-->
+      <a id="nosotros"></a>
       <section class="programa">
         <div class="contenedor-video">
          <img src="./img/Video1.jpeg">
           </video>
         </div><!--video-->
+
       
       <div class="contenido-programa">
         <div class="contenedor">
@@ -82,7 +85,7 @@
           </div><!--Programa evento-->
         </div><!--Contenedor-->
       </section><!--Contenido del programa-->
-
+      <a id="cliente"></a>
       <section class="clientes contenedor seccion">
           <h2>Nuestros Clientes</h2>
           <ul class="lista-clientes clearfix">
@@ -152,37 +155,58 @@
           </ul>
         </div>
       </section><!--Lista precios-->
-
-      <div id="mapa" class="mapa"></div>
       
       <div class="newsletter parallax">
         <div class="contenido contendedor">
           <h3 class="awards">Logros</h3>
         </div><!--Logros-->
+        <a id="contacta"><p></p></a>
       </div><!--newsletter-->
         </div>
       </section><!--Contador-->
+      
+      <!--Mapa-->
+      <div id="mapa" class="mapa">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d552.4834451498318!2d-99.19367789796341!3d19.548620202429184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21d609ae97169%3A0x35f4910c35d92709!2sRedes%20SA%20DE%20CV!5e0!3m2!1ses-419!2smx!4v1583426489250!5m2!1ses-419!2smx" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <!--Formulario Contactanos-->
 
+        <div class="informacion"> 
+          <form action="ContactUs" class="contactanos">
+            <h1>¡Contactanos!</h1><br>
+            <input type="text" placeholder="Nombre"><br>
+            
+            <input type="email" placeholder="Email"><br>
+            
+            <input type="text" placeholder="Telefonos"><br>
+             
+            <textarea name="message" cols="64" rows="8" placeholder="Mensaje"></textarea><br>
+            <input type="submit">
+          </form>
+        
+        </div> <!--Formulario Contactanos-->
+      </div><!--Mapa-->
+  
       <footer class="site-footer">
         <div class="contenedor clearfix">
           <div class="footer-informacion">
             <h3>TRABAJA CON<span> NOSOTROS</span></h3>
             <p>Enterate de las ultimas vacantes que tenemos para ti</p>
+            <a href="#" class="boton">Vacantes</a>
           </div>
+          <!--Footer-->
           <div class="ultimos-tweets">
-              <h3> NUESTRAS<span> CEDES</span></h3>
-              <ul>
-                <li>Pachuca, Hidalgo</li>
-                <li>Anzures, CDMX</li>
-                <li>Tlalnepantla,Edo. de México</li>
-                <li>Atizapán de Zaragoza,Edo. de México</li>
-              </ul>
+            <h3> Dirección<span> Redes</span></h3>
+            <p><span>Direccion: </span>Atenco #35-B Col. La Romana, Tlalnepantla de Baz, Estado de México</p>
+            <p><span>Teléfonos: </span><br><i class="fas fa-phone-alt"></i>    55-72-58-13-20 <br> <i class="fas fa-phone-alt"></i>    55-72-58-13-22</p>  
+          
           </div>
           <div class="menu">
               <h3>Redes <span>Sociales</span></h3>
               <nav class="redes-sociales">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.facebook.com/CCREDESSAdeCV/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/redessadecv/"><i class="fab fa-instagram"></i></a>
               </nav>
           </div>
         </div>
@@ -190,19 +214,19 @@
       </footer>
 
   <script src="https://kit.fontawesome.com/48be980232.js"></script>
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <!-- <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script> -->
+  <!-- <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script> -->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
+  <!-- <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"async defer></script> -->
 </body>
  <!-- Autor Victor Montaño -->
 </html>
